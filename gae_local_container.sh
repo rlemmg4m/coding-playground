@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker run --rm -e "APP_MODE=DEV" -p 8080:8080  -p 8000:8000 -v "`pwd`:/app" -w /app eu.gcr.io/g4m-docker-images/cloud-sdk-docker dev_appserver.py app.yaml --php_executable_path=/usr/bin/php5-cgi  --host=0.0.0.0 --admin_host=0.0.0.0

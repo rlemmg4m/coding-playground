@@ -1,0 +1,12 @@
+{
+  "targets": {
+    "alpha": {
+      "app_id": "g4m-myapp-alpha",
+      "version": "alpha",
+      "environment": {
+        "CACHE_MODE": "APP_ENGINE_MEMCACHED",
+        "LOGGER_TYPE": "SYSLOG"
+      }
+    }
+  }
+}

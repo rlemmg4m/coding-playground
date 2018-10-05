@@ -1,0 +1,57 @@
+{
+  "type": "application",
+  "description": "API, built with japi-builder",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.5.0",
+    "gear4music/php-japi-extended": "v1.1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0",
+    "vlucas/phpdotenv": "^2.1"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:Gear4music/php-japi-extended"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Gear4music/cache"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Gear4music/environment"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Gear4music/oauth2-public-key"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Gear4music/oauth2-validator"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Gear4music/php-japi"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:Gear4music/php-japi-json-schema"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ],
+    "psr-4": {
+      "Gear4music\\ReturnsSearch\\": "src/Gear4music/ReturnsSearch/"
+    }
+  },
+  "include-path": [
+    "src/"
+  ],
+  "config": {
+    "optimize-autoloader": true
+  }
+}

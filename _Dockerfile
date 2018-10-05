@@ -1,0 +1,9 @@
+# See README for build & run commands
+
+FROM eu.gcr.io/g4m-docker-images/php-apache:2.4-lite-v1.0.0
+
+RUN mkdir /app
+
+COPY ./manifest/ /
+
+COPY ./ /app/

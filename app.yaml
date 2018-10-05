@@ -1,0 +1,42 @@
+application: g4m-myapp-alpha
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+# Application mode 'DEV' - this will cause the .env file to be loaded
+
+env_variables:
+
+  APP_MODE: DEV
+
+handlers:
+
+# Robots
+
+- url: /robots\.txt
+  static_files: public/robots.txt
+  upload: public/robots\.txt
+
+# Favicon
+
+- url: /favicon\.ico
+  static_files: public/favicon.ico
+  upload: public/favicon\.ico
+
+# Ensure authentication for crons
+
+- url: /cron/.*
+  script: public/main.php
+  login: admin
+
+# Ensure authentication for tasks
+
+- url: /task/.*
+  script: public/main.php
+  login: admin
+
+# Default rule
+
+- url: .*
+  script: public/main.php
+  secure: always
