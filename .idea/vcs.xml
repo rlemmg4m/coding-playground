@@ -25,6 +25,7 @@
     <mapping directory="$PROJECT_DIR$/vendor/sebastian/global-state" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/sebastian/object-enumerator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/sebastian/recursion-context" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/symfony/yaml" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/vlucas/phpdotenv" vcs="Git" />

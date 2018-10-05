@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: robert.lemm
- * Date: 05/10/2018
- * Time: 12:00
- */
 
 namespace Gear4music\ReturnsSearch\Controller\Search;
-
 
 use Gear4music\JAPI\AuthSpec\Insecure;
 use Gear4music\JAPI\AuthSpecInterface;
@@ -15,6 +8,12 @@ use Gear4music\JAPI\RequestValidatorSpec\NoValidation;
 use Gear4music\JAPI\RequestValidatorSpecInterface;
 use Gear4music\ReturnsSearch\Controller;
 use Gear4music\ReturnsSearch\Data\Repository\Noop\FakeEntity;
+
+/**
+ * Class FakeByID
+ *
+ * @package Gear4music\ReturnsSearch\Controller\Search
+ */
 
 class FakeByID extends Controller
 {
@@ -35,7 +34,8 @@ class FakeByID extends Controller
         try {
             $this->obj_fake_entity = (new FakeEntity())->fetchById($this->str_identifier);
         } catch (\Exception $obj_error) {
-            $this->setResponseJson(['Error when looking for fake entity with ID ' . $this->str_identifier => $obj_error->getMessage()]);
+            $this->setResponseJson(['Error when looking for fake entity with ID '
+            . $this->str_identifier => $obj_error->getMessage()]);
         }
 
         $this->setResponseJson(['data' => $this->obj_fake_entity, 'id called' => $this->str_identifier]);
@@ -50,6 +50,7 @@ class FakeByID extends Controller
     {
         return new Insecure();
     }
+
 
     /**
      * Build and return a spec that defines how we validate the Request
