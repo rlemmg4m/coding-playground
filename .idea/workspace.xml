@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93a459a5-740b-40d2-af0a-2967bf63e0ab" name="Default Changelist" comment="" />
+    <list default="true" id="93a459a5-740b-40d2-af0a-2967bf63e0ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search/FakeByID.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search/FakeByID.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/FakeEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/FakeEntity.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="md" value="1" />
           <entry key="php" value="11" />
           <entry key="sh" value="1" />
         </counts>
@@ -28,7 +33,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="PHP" value="11" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -38,12 +45,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="836" />
+          <entry key="gitignore" value="36" />
+          <entry key="php" value="985" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="836" />
+          <entry key="PHP" value="985" />
+          <entry key="PLAIN_TEXT" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
@@ -69,7 +78,16 @@
         <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/FakeEntity.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="331">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+              <caret line="30" column="98" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -77,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search/FakeByID.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="8" column="52" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="52" />
+            <state relative-caret-position="450">
+              <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
               <folding>
                 <element signature="e#151#189#0#PHP" expanded="true" />
               </folding>
@@ -118,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/EntityTest.php" />
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/FakeEntity.php" />
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/FakeEntity.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search/FakeByID.php" />
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/FakeEntity.php" />
       </list>
@@ -322,12 +341,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538735841284</updated>
-      <workItem from="1538735843267" duration="2768000" />
+      <workItem from="1538735843267" duration="3149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2768000" />
+    <option name="totallyTimeSpent" value="3149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-158" width="1920" height="1058" extended-state="6" />
@@ -407,10 +426,25 @@
         <state relative-caret-position="-209" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search/FakeByID.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="52" />
+        <state relative-caret-position="450">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
           <folding>
             <element signature="e#151#189#0#PHP" expanded="true" />
           </folding>
@@ -420,7 +454,7 @@
     <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/FakeEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <caret line="30" column="98" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
         </state>
       </provider>
     </entry>

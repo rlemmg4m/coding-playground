@@ -28,7 +28,7 @@ class FakeEntity extends \Gear4music\ReturnsSearch\Data\Repository\FakeEntity
      */
     public function fetchById($str_identifier)
     {
-        return ['NO-OPS' => 'Fetch by Id called'];
+        return ("1337" === $str_identifier) ? ['NO-OPS' => 'Fetch by Id called and found fake item'] : ['NO-OPS' => 'No fake item found'];
     }
 
     /**

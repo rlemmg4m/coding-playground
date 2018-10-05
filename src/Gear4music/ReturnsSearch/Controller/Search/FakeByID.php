@@ -32,14 +32,13 @@ class FakeByID extends Controller
         $this->arr_query_params = $this->getRequest()->getQueryParams();
         $this->str_identifier = $this->arr_query_params['return_identifier'];
 
-        try{
+        try {
             $this->obj_fake_entity = (new FakeEntity())->fetchById($this->str_identifier);
-        }catch (\Exception $obj_error)
-        {
-            $this->setResponseJson(['Error when looking for fake entity with ID ' . $this->str_identifier  => $obj_error->getMessage()]);
+        } catch (\Exception $obj_error) {
+            $this->setResponseJson(['Error when looking for fake entity with ID ' . $this->str_identifier => $obj_error->getMessage()]);
         }
 
-        $this->setResponseJson([$this->obj_fake_entity]);
+        $this->setResponseJson(['data' => $this->obj_fake_entity, 'id called' => $this->str_identifier]);
     }
 
     /**
