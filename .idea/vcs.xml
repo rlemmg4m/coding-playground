@@ -3,7 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/doctrine/instantiator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/elasticsearch/elasticsearch" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/psr7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/ringphp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/streams" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/lcobucci/jwt" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/league/event" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/league/oauth2-server" vcs="Git" />
@@ -17,6 +20,7 @@
     <mapping directory="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/psr/http-message" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/psr/log" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/react/promise" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/sebastian/comparator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/sebastian/diff" vcs="Git" />
