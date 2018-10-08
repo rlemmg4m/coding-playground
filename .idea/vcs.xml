@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/doctrine/instantiator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/elasticsearch/elasticsearch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/fzaninotto/faker" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/psr7" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/ringphp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/streams" vcs="Git" />

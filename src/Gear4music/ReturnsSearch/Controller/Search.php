@@ -14,7 +14,8 @@ use Gear4music\JAPI\AuthSpecInterface;
 use Gear4music\JAPI\RequestValidatorSpec\NoValidation;
 use Gear4music\JAPI\RequestValidatorSpecInterface;
 use Gear4music\ReturnsSearch\Controller;
-use Gear4music\ReturnsSearch\Data\Repository\Noop\Returns;
+//use Gear4music\ReturnsSearch\Data\Repository\Noop\Returns;
+use Gear4music\ReturnsSearch\Data\Repository\ElasticSearch\Returns;
 
 class Search extends Controller
 {
@@ -49,14 +50,17 @@ class Search extends Controller
         $this->arr_query_params = $this->getRequest()->getQueryParams();
         $this->str_search_identifier = $this->arr_query_params['search_id'];
         $this->str_search_field = $this->arr_query_params['search_field'];
+
         try {
-            $this->arr_return_data = (new Returns())->search($this->str_search_field, $this->str_search_identifier);
-
-            return $this->setResponseJson($this->arr_return_data);
-
+            $this->arr_return_data = (new Returns())->search($this->str_search_field,
+                $this->str_search_identifier)->getData();
+            echo "<pre>";
+            print_r($this->arr_return_data);
+            die();
         } catch (\Exception $exception) {
-            throw new \Gear4music\JAPI\Exceptions\ErrorResponse('Unable to process request', 500);
+            die($exception->getMessage());
         }
+        return $this->setResponseJson($this->arr_return_data);
     }
 
     /**
