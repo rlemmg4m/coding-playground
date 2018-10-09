@@ -8,10 +8,10 @@
 
 namespace Gear4music\ReturnsSearch\Controller;
 
-
 use Gear4music\JAPI\AuthSpec\Insecure;
 use Gear4music\JAPI\AuthSpecInterface;
 use Gear4music\JAPI\RequestValidatorSpec\NoValidation;
+use Gear4music\JAPI\RequestValidatorSpec\Validation;
 use Gear4music\JAPI\RequestValidatorSpecInterface;
 use Gear4music\ReturnsSearch\Controller;
 //use Gear4music\ReturnsSearch\Data\Repository\Noop\Returns;
@@ -52,15 +52,21 @@ class Search extends Controller
         $this->str_search_field = $this->arr_query_params['search_field'];
 
         try {
-            $this->arr_return_data = (new Returns())->search($this->str_search_field,
-                $this->str_search_identifier)->getData();
-            echo "<pre>";
-            print_r($this->arr_return_data);
-            die();
+            $this->arr_return_data = (new Returns())->search(
+                $this->str_search_field,
+                $this->str_search_identifier
+            );
         } catch (\Exception $exception) {
             die($exception->getMessage());
         }
-        return $this->setResponseJson($this->arr_return_data);
+        return $this->setResponseJson(
+            [
+            'success' => true,
+            'count' => $this->arr_return_data->getCount(),
+            'data' => $this->arr_return_data->getData()
+            ]
+        );
+
     }
 
     /**
@@ -80,6 +86,8 @@ class Search extends Controller
      */
     public function buildRequestValidatorSpec()
     {
+        // TODO figure out path to get this to recognise properly
+        // return new Validation(Validation::VALIDATE_QUERY_PARAMS);
         return new NoValidation();
     }
 }
