@@ -1,0 +1,12 @@
+{
+  "search_id": {
+    "type": "string"
+  },
+  "search_field": {
+    "type": "string"
+  },
+  "required": [
+    "search_id",
+    "search_field"
+  ]
+}

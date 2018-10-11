@@ -6,11 +6,11 @@ use Elasticsearch\Common\Exceptions\NoNodesAvailableException;
 use Gear4music\ReturnsSearch\Data\Repository\ElasticSearch;
 use Elasticsearch\ClientBuilder;
 
-class Returns extends ElasticSearch
+class ReturnsAlt extends ElasticSearch
 {
 
-    const ELASTIC_INDEX = 'search_index_full';
-    const ELASTIC_TYPE = 'returns';
+    const ELASTIC_INDICES = 'search_index_order,search_index_tracking,search_index_enquiry';
+    const ELASTIC_TYPES = 'order_number,tracking_reference,enquiry_id';
 
     /**
      * @var \Elasticsearch\Client
@@ -48,8 +48,8 @@ class Returns extends ElasticSearch
     public function search($str_search_identifier, $int_search_size = 1000)
     {
         $this->arr_elastic_params = [
-            'index' => self::ELASTIC_INDEX,
-            'type' => self::ELASTIC_TYPE,
+            'index' => self::ELASTIC_INDICES,
+            'type' => self::ELASTIC_TYPES,
             'body' => [
                 'query' => [
                     'query_string' => [
@@ -77,7 +77,8 @@ class Returns extends ElasticSearch
         $arr_result_data = [];
         foreach($this->arr_elastic_response['hits']['hits'] as $results)
         {
-            $arr_result_data[] = $results['_source'];
+            $arr_result_data[] = ['return_id' => $results['_id']
+                , 'type' => $results['_type'] , 'match' => $results['_source']];
         }
         return $arr_result_data;
     }

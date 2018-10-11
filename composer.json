@@ -4,7 +4,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=5.5.0",
-    "gear4music/php-japi-extended": "v1.1.*"
+    "gear4music/php-japi-extended": "v1.1.*",
+    "larapack/dd": "1.*"
   },
   "require-dev": {
     "phpunit/phpunit": "~5.0",

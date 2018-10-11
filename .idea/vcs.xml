@@ -8,6 +8,7 @@
     <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/psr7" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/ringphp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/guzzlehttp/streams" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/larapack/dd" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/lcobucci/jwt" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/league/event" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/league/oauth2-server" vcs="Git" />
@@ -32,6 +33,9 @@
     <mapping directory="$PROJECT_DIR$/vendor/sebastian/recursion-context" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/polyfill-php72" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/var-dumper" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/symfony/yaml" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/vlucas/phpdotenv" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vendor/webmozart/assert" vcs="Git" />

@@ -1,35 +1,48 @@
 # API #
 
-## Running with App Engine SDK/Container ##
+## Quick Setup ##
 
-**Using dev_appserver.py**
+Run
+```bash
+composer install
+```
+This should download required dependencies including elastic search which is used as a data store as
+well as faker for the mock seeding.
+
+Run 'seedReturnsSearchDataDev.php' with
 
 ```bash
-dev_appserver.py .
+php seedReturnsSearchDataDev.php
 ```
 
-**Or, with the "container" version of AppEngine**
-
-```bash
-./gae_local_container.sh
-```
+This will insert 1000 records of fake data, feel free to mofigy it to suit your needs.
 
 ## Running with Docker ##
 
-Based (at the time of writing) on the Gear4music PHP 7.1 + Apache 2.4 Alpine image.
-
-### Build command ###
-
-Execute from project root, feel free to use image name:tag as you see fit.
+**Using docker-compose with terminal output**
 
 ```bash
-docker build -t g4m/my-app:dev -f _Dockerfile .
+docker-compose up
 ```
 
-### Run command ###
-
-Use environment and port details as you need, adn the image:tag name from above.
+**Using docker-compose detached**
 
 ```bash
-docker run --rm -e "APP_MODE=DEV" -p 32777:80  "g4m/my-app:dev"
+docker-compose up -d
+```
+This should install a local google app engine within docker with elastic-search
+## Using / Viewing ##
+To use the API locally with the docker image, using either Postman or a web-browser
+you can visit or GET request
+```bash
+http://0.0.0.0:8081/search?[params]
+```
+
+The local version of elastic search is located
+```bash
+http://localhost:9200
+```
+It can be interacted with via the URL Syntax e.g.
+```bash
+http://localhost:9200/index_id/index_type/_search?
 ```

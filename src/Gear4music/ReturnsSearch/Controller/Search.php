@@ -11,11 +11,11 @@ namespace Gear4music\ReturnsSearch\Controller;
 use Gear4music\JAPI\AuthSpec\Insecure;
 use Gear4music\JAPI\AuthSpecInterface;
 use Gear4music\JAPI\RequestValidatorSpec\NoValidation;
-use Gear4music\JAPI\RequestValidatorSpec\Validation;
 use Gear4music\JAPI\RequestValidatorSpecInterface;
 use Gear4music\ReturnsSearch\Controller;
 //use Gear4music\ReturnsSearch\Data\Repository\Noop\Returns;
 use Gear4music\ReturnsSearch\Data\Repository\ElasticSearch\Returns;
+use Gear4music\ReturnsSearch\Data\Repository\ElasticSearch\ReturnsAlt;
 
 class Search extends Controller
 {
@@ -49,11 +49,13 @@ class Search extends Controller
     {
         $this->arr_query_params = $this->getRequest()->getQueryParams();
         $this->str_search_identifier = $this->arr_query_params['search_id'];
-        $this->str_search_field = $this->arr_query_params['search_field'];
-
         try {
-            $this->arr_return_data = (new Returns())->search(
-                $this->str_search_field,
+            // Structure 1 search
+//            $this->arr_return_data = (new Returns())->search(
+//                $this->str_search_identifier
+//            );
+            // Structure 2 search
+            $this->arr_return_data = (new ReturnsAlt())->search(
                 $this->str_search_identifier
             );
         } catch (\Exception $exception) {
@@ -62,7 +64,7 @@ class Search extends Controller
         return $this->setResponseJson(
             [
             'success' => true,
-            'count' => $this->arr_return_data->getCount(),
+            'count' => count($this->arr_return_data->getData()),
             'data' => $this->arr_return_data->getData()
             ]
         );

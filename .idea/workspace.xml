@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93a459a5-740b-40d2-af0a-2967bf63e0ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.local.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seedReturnsSearchDataDev.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seedverify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seedReturnsSearchDataDev_structure_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsAlt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/returns-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/returns-search.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seedReturnsSearchDataDev.php" beforeDir="false" afterPath="$PROJECT_DIR$/seedReturnsSearchDataDev_structure_1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/Returns.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/Returns.php" afterDir="false" />
@@ -33,53 +36,62 @@
     <session id="-361044293">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="json" value="3" />
-          <entry key="md" value="1" />
-          <entry key="php" value="40" />
+          <entry key="json" value="9" />
+          <entry key="lock" value="1" />
+          <entry key="md" value="3" />
+          <entry key="php" value="55" />
           <entry key="sh" value="3" />
+          <entry key="xml" value="1" />
           <entry key="yaml" value="2" />
-          <entry key="yml" value="2" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="3" />
-          <entry key="JSON" value="3" />
-          <entry key="Markdown" value="1" />
-          <entry key="PHP" value="40" />
+          <entry key="JSON" value="10" />
+          <entry key="Markdown" value="3" />
+          <entry key="PHP" value="55" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="YAML" value="4" />
+          <entry key="XML" value="1" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="13" />
+          <entry key="PHP Class.type" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="36" />
-          <entry key="json" value="5" />
-          <entry key="php" value="4731" />
+          <entry key="json" value="254" />
+          <entry key="md" value="954" />
+          <entry key="php" value="6600" />
+          <entry key="xml" value="16" />
           <entry key="yaml" value="4" />
-          <entry key="yml" value="50" />
+          <entry key="yml" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="5" />
-          <entry key="PHP" value="4731" />
+          <entry key="JSON" value="254" />
+          <entry key="Markdown" value="954" />
+          <entry key="PHP" value="6600" />
           <entry key="PLAIN_TEXT" value="36" />
-          <entry key="YAML" value="54" />
+          <entry key="XML" value="16" />
+          <entry key="YAML" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
@@ -95,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/Returns.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="14" column="7" lean-forward="true" selection-end-line="100" />
               <folding>
                 <element signature="e#74#136#0#PHP" expanded="true" />
               </folding>
@@ -105,10 +117,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seedReturnsSearchDataDev_structure_2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="130" column="23" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+              <folding>
+                <element signature="e#717#1270#0#PHP" />
+                <element signature="e#1297#1835#0#PHP" />
+                <element signature="e#1864#2400#0#PHP" />
+                <element signature="e#2934#3125#0#PHP" />
+                <element signature="e#3147#3370#0#PHP" />
+                <element signature="e#3394#3585#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="15" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="15" />
+            <state relative-caret-position="340">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seedReturnsSearchDataDev_structure_1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.lock">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsAlt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+              <folding>
+                <element signature="e#74#136#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -116,20 +194,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+            <state relative-caret-position="238">
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding>
-                <element signature="e#144#182#0#PHP" expanded="true" />
+                <element signature="e#143#181#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seedverify.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="26" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -151,15 +220,23 @@
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/ReturnsEntity.php" />
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Returns.php" />
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/AurynBootstrapper.php" />
-        <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch.php" />
         <option value="$PROJECT_DIR$/seedReturnsSearchData.php" />
-        <option value="$PROJECT_DIR$/seedReturnsSearchDataDev.php" />
-        <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/Returns.php" />
         <option value="$PROJECT_DIR$/seedverify.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app.local.yaml" />
+        <option value="$PROJECT_DIR$/res/schemas/Gear4Music/ReturnsSearch/Controllers/Search/query.json" />
+        <option value="$PROJECT_DIR$/res/schema/Gear4music/ReturnsSearch/Controller/Search/query.json" />
+        <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/Returns.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/phpunit.xml" />
+        <option value="$PROJECT_DIR$/tests/unit/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsTest.php" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/seedReturnsSearchDataDev.php" />
+        <option value="$PROJECT_DIR$/seedReturnsSearchDataDev_structure_2.php" />
+        <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch.php" />
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/Returns.php" />
+        <option value="$PROJECT_DIR$/seedReturnsSearchDataDev_structure_1.php" />
+        <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsAlt.php" />
         <option value="$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search.php" />
       </list>
     </option>
@@ -231,13 +308,17 @@
       <path value="$PROJECT_DIR$/vendor/elasticsearch/elasticsearch" />
       <path value="$PROJECT_DIR$/vendor/react/promise" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/larapack/dd" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1544" />
     <option name="y" value="-158" />
-    <option name="width" value="1920" />
-    <option name="height" value="1058" />
+    <option name="width" value="1690" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -262,6 +343,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,21 +409,10 @@
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
               <item name="ElasticSearch" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="returns-search" type="b2602c69:ProjectViewProjectNode" />
-              <item name="returns-search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Gear4music" type="462c0819:PsiDirectoryNode" />
-              <item name="ReturnsSearch" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Noop" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,7 +421,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -369,7 +440,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.ReturnsTest.testCanCreateElasticReturn">
     <configuration name="gae_local_container.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="returns-search" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -380,8 +451,23 @@
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ReturnsTest.testCanCreateElasticReturn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ReturnsTest" file="$PROJECT_DIR$/tests/unit/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsTest.php" method="testCanCreateElasticReturn" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReturnsTest.testReturnDataArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ReturnsTest" file="$PROJECT_DIR$/tests/unit/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsTest.php" method="testReturnDataArray" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Bash.gae_local_container.sh" />
+      <item itemvalue="PHPUnit.ReturnsTest.testReturnDataArray" />
+      <item itemvalue="PHPUnit.ReturnsTest.testCanCreateElasticReturn" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ReturnsTest.testCanCreateElasticReturn" />
+        <item itemvalue="PHPUnit.ReturnsTest.testReturnDataArray" />
         <item itemvalue="Bash.gae_local_container.sh" />
       </list>
     </recent_temporary>
@@ -397,23 +483,36 @@
       <option name="presentableId" value="Default" />
       <updated>1538735841284</updated>
       <workItem from="1538735843267" duration="7305000" />
-      <workItem from="1538749136157" duration="20476000" />
+      <workItem from="1538749136157" duration="28106000" />
+      <workItem from="1539075398389" duration="144000" />
+      <workItem from="1539075549433" duration="5848000" />
+      <workItem from="1539246211317" duration="13000" />
+      <workItem from="1539246461588" duration="8000" />
+      <workItem from="1539262322257" duration="5300000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ReturnsTest_testReturnDataArray - 2018.10.09 at 10h 16m 00s.xml">
+      <configuration name="ReturnsTest.testReturnDataArray" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ReturnsTest_testCanCreateElasticReturn - 2018.10.09 at 10h 17m 29s.xml">
+      <configuration name="ReturnsTest.testCanCreateElasticReturn" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27781000" />
+    <option name="totallyTimeSpent" value="46724000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-158" width="1920" height="1058" extended-state="6" />
+    <frame x="1544" y="-158" width="1690" height="974" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12140575" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.2038835" />
+      <window_info id="Structure" order="1" sideWeight="0.5010142" side_tool="true" weight="0.2038835" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.300554" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29834256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -422,7 +521,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32919255" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33126295" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.44104308" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -439,14 +538,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/Test.php" />
     <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/EntityTest.php" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -454,13 +545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search/FakeByID.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search/FakeByID.php" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -482,55 +567,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/FakeEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/FakeEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/FakeEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/AurynBootstrapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Returns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/ReturnsEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/FakeEntity.php" />
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/FakeEntity.php" />
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/FakeEntity.php" />
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Returns.php" />
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Entity/ReturnsEntity.php" />
     <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-104" />
@@ -540,27 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/Returns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seedReturnsSearchDataDev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -581,24 +601,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seedverify.php">
+    <entry file="file://$PROJECT_DIR$/seedverify.php" />
+    <entry file="file://$PROJECT_DIR$/res/schemas/Gear4Music/ReturnsSearch/Controllers/Search/query.json" />
+    <entry file="file://$PROJECT_DIR$/res/schema/Gear4music/ReturnsSearch/Controller/Search/query.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="150">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/Noop/Returns.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="851">
+          <caret line="64" column="26" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="249">
+            <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/rdlowrey/auryn/lib/Injector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9374">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/AurynBootstrapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seedReturnsSearchDataDev_structure_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/Returns.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="true" selection-end-line="100" />
+          <folding>
+            <element signature="e#74#136#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seedReturnsSearchDataDev_structure_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="130" column="23" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+          <folding>
+            <element signature="e#717#1270#0#PHP" />
+            <element signature="e#1297#1835#0#PHP" />
+            <element signature="e#1864#2400#0#PHP" />
+            <element signature="e#2934#3125#0#PHP" />
+            <element signature="e#3147#3370#0#PHP" />
+            <element signature="e#3394#3585#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Data/Repository/ElasticSearch/ReturnsAlt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
           <folding>
             <element signature="e#74#136#0#PHP" expanded="true" />
           </folding>
@@ -607,10 +726,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Gear4music/ReturnsSearch/Controller/Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+        <state relative-caret-position="238">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
           <folding>
-            <element signature="e#144#182#0#PHP" expanded="true" />
+            <element signature="e#143#181#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

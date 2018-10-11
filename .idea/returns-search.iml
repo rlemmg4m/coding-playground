@@ -19,6 +19,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/ringphp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/streams" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/larapack/dd" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/event" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/oauth2-server" />
@@ -53,6 +54,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/version" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/squizlabs/php_codesniffer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
