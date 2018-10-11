@@ -50,11 +50,11 @@ class Search extends Controller
         $this->arr_query_params = $this->getRequest()->getQueryParams();
         $this->str_search_identifier = $this->arr_query_params['search_id'];
         try {
-            // Structure 1 search
+            // Structure 1 search <-- Single index search
 //            $this->arr_return_data = (new Returns())->search(
 //                $this->str_search_identifier
 //            );
-            // Structure 2 search
+            // Structure 2 search <-- Multi index search
             $this->arr_return_data = (new ReturnsAlt())->search(
                 $this->str_search_identifier
             );
